@@ -1,34 +1,29 @@
 # Hausdorff distance calculation using Matlab
 
-* * *
-
-
 ![image alt text](image_0.png)
 
-In mathematics, the **Hausdorff distance**, or **Hausdorff metric**, also called **Pompeiu–Hausdorff distance**, measures how far two [subsets](https://en.wikipedia.org/wiki/Subset) of a [metric space](https://en.wikipedia.org/wiki/Metric_space) are from each other.
+> In mathematics, the **Hausdorff distance**, or **Hausdorff metric**, also called **Pompeiu–Hausdorff distance**, measures how far two [subsets](https://en.wikipedia.org/wiki/Subset) of a [metric space](https://en.wikipedia.org/wiki/Metric_space) are from each other.
+>Informally, two sets are close in the Hausdorff distance if every point of either set is close to some point of the other set. The Hausdorff distance is the longest distance you can be forced to travel by an adversary who chooses a point in one of the two sets, from where you then must travel to the other set. In other words, it is the greatest of all the distances from a point in one set to the closest point in the other set. [Wikipedia]
 
-Informally, two sets are close in the Hausdorff distance if every point of either set is close to some point of the other set. The Hausdorff distance is the longest distance you can be forced to travel by an adversary who chooses a point in one of the two sets, from where you then must travel to the other set. In other words, it is the greatest of all the distances from a point in one set to the closest point in the other set. [Wikipedia]
-
-**Problem statement:**
+## Problem statement:
 
 Implement the Hausdorff distance and test for the images given in folder named "images".
-
-**Input images: image1...image4**
-
 Choose one image as a test and measure the distances with the other images. Sample result images are shown in image1_2 and image3_4.
+
+**Input images:** image1 ... image4
 
 Example:
 
 <table>
   <tr>
     <td>
-<img src="images/image1.png" width="" alt="alt_text" title="image_tooltip">
+<img src="images/image1.png" width="" alt="alt_text" title="image_tooltip"> <p>
 Image 1</td>
     <td>
- <img src="images/image2.png" width="" alt="alt_text" title="image_tooltip">
+ <img src="images/image2.png" width="" alt="alt_text" title="image_tooltip"> <p>
 Image 2</td>
     <td>
- <img src="images/image1_2.png" width="" alt="alt_text" title="image_tooltip">
+ <img src="images/image1_2.png" width="" alt="alt_text" title="image_tooltip"> <p>
 Resultant HD distance</td>
   </tr>
 </table>
@@ -36,7 +31,7 @@ Resultant HD distance</td>
 
 ## Code:
 
-```
+```Matlab
 function [ H ] = hausdorffDist(P,Q)
    D = pdist2(P,Q); % Distance calculation
    hab = max(min(D,[],2));% Directed from a to b
