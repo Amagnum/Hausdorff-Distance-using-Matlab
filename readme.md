@@ -35,21 +35,12 @@ Resultant HD distance</td>
 
 <table>
   <tr>
-    <td>function [ H ] = hausdorffDist(P,Q)
-   D = pdist2(P,Q); % Distance calculation
-   hab = max(min(D,[],2));% Directed from a to b
-   hba = max(min(D));% Directed from b to a
-   H = max([hab,hba]);
-end</td>
-  </tr>
-</table>
-
+   <td>
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ## Results (Output):
 
 ![image alt text](image_1.png)
-
-* * *
 
 
 ## REFERENCES:
